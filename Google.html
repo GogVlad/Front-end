@@ -2,9 +2,9 @@
     <title>Google</title>
     <style>
         .optionsBar{
-            margin-top:-15%;
+            margin-top:-10%;
             width:25%;
-            height: 2cm;
+            height: 3%;
             position:relative;
             float:right;
         }
@@ -20,11 +20,10 @@
             width: 1.2cm;
         }
         .logo{
-            margin-top: 15%;
+            margin-top: 10%;
             margin-left:37%;
         }
         .searchBar {
-            width: 100%;
             border-radius: 15px;
             border: 1px #000 solid;
             padding: 5px 5px 5px 25px;
@@ -32,10 +31,42 @@
             top: 0;
             left: 0;
             z-index: 5;
-            margin-left:25%;
-            width:50%;
+            margin-left:30%;
+            width:40%;
             height: 1cm;
             box-shadow: 2px 2px;
+            outline: none;
+        }
+        .buttons{
+            position: relative;
+            left:40%;
+            font-family: arial,sans-serif;
+            height:0.8cm;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 44;
+            width: 100%;
+            background-color: #dadce0;
+            color: rgba(0,0,0,.54);
+            text-align: left;
+            padding: 15px 30px;
+            font-size: 15px;
+        }
+        .footer2 {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #dadce0;
+            color: rgba(0,0,0,.54);
+            text-align: left;
+            padding: 15px 30px;
+            font-size: 15px;
+            justify-content: space-evenly;
+            display: flex;
+            flex-wrap: wrap;
         }
     </style>
 </head>
@@ -54,4 +85,30 @@
     <div>
             <input class="searchBar"  type="text" placeholder="Search.." name="search">
     </div>
+    <div style="padding: 16px;">
+        <button class="buttons">Cautare Google</button>
+        <button class="buttons">Ma simt norocos</button>
+    </div>
+    <div style="margin-left: 39%;">
+            Google oferit in:
+            <a href="https://www.google.com/setprefs?sig=0_udff_R5hCOzjt324tyLraty3YbQ%3D&amp;hl=en&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjs852cxZHwAhUOxIUKHRviDNQQ2ZgBCA8">English</a>
+            <a href="https://www.google.com/setprefs?sig=0_udff_R5hCOzjt324tyLraty3YbQ%3D&amp;hl=hu&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjs852cxZHwAhUOxIUKHRviDNQQ2ZgBCBA">Magyar</a>
+            <a href="https://www.google.com/setprefs?sig=0_udff_R5hCOzjt324tyLraty3YbQ%3D&amp;hl=de&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjs852cxZHwAhUOxIUKHRviDNQQ2ZgBCBE">Deutsch</a>
+    </div>
+    <div class="footer">
+        Romania
+    </div>
+    <div class="footer2">
+        Despre &nbsp; &nbsp; &nbsp;
+        Publicitate   &nbsp;  &nbsp; &nbsp;
+        Companii    &nbsp; &nbsp; &nbsp;
+        Cum functioneaza Cautarea    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+         &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; 
+        Confidentialitate &nbsp; &nbsp; &nbsp;
+        Termeni &nbsp; &nbsp; &nbsp;
+        Setari &nbsp; &nbsp; &nbsp;
+    </div>
+
 </body>
