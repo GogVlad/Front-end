@@ -1,9 +1,17 @@
 <head>
     <title>Google</title>
     <style>
+        .optionsBar{
+            margin-top:-15%;
+            width:25%;
+            height: 2cm;
+            position:relative;
+            float:right;
+        }
         .optionsBarButton{
             border: none;
             outline: none;
+            margin-top: 5px;
             background-color: Transparent;
             background-repeat: no-repeat;
         }
@@ -11,19 +19,39 @@
             height:0.7cm;
             width: 1.2cm;
         }
-        .optionsBar{
-            width:25%;
-            position:relative;
-            right:-75%;
+        .logo{
+            margin-top: 15%;
+            margin-left:37%;
+        }
+        .searchBar {
+            width: 100%;
+            border-radius: 15px;
+            border: 1px #000 solid;
+            padding: 5px 5px 5px 25px;
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            margin-left:25%;
+            width:50%;
+            height: 1cm;
+            box-shadow: 2px 2px;
         }
     </style>
 </head>
 <body>
-    <table class="optionsBar">
-    <tr>
-      <th><button class="optionsBarButton">Gmail</button></th>
-      <th><button class="optionsBarButton">Images</button></th>
-      <th><button class="optionsBarButton"><img class="smallImg" src="GoogleApps.jpeg"></button></th>
-      <th><button class="optionsBarButton"><img class="smallImg" src="PersonIcon.png"></button></th>
-    </tr>
+        <table class="optionsBar">
+        <tr>
+        <th><button class="optionsBarButton">Gmail</button></th>
+        <th><button class="optionsBarButton">Images</button></th>
+        <th><button class="optionsBarButton"><img class="smallImg" src="GoogleApps.jpeg"></button></th>
+        <th><button class="optionsBarButton"><img class="smallImg" src="PersonIcon.png"></button></th>
+        </tr>
+        </table>
+    <div class="logo">
+        <img src="Logo.png">
+    </div>
+    <div>
+            <input class="searchBar"  type="text" placeholder="Search.." name="search">
+    </div>
 </body>
